@@ -29,7 +29,8 @@ COPY . .
 RUN dotnet publish -c Release -o out
 
 ## משתנה סביבה
-#ENV DB_CONNECTION=""
+ENV DB_CONNECTION="your_connection_string_here"
+
 
 # התחלת האפליקציה
 WORKDIR /app_minimal/out
