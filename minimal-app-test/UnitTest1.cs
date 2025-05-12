@@ -25,7 +25,7 @@ namespace minimal_app_test
             var result = Logic.GetMessage(dbConnection);
 
             // Assert
-            Assert.Equal("hello word - ", result);
+            Assert.Equal("almost there, secret: DB_CONNECTION is not set", result);
         }
 
         [Fact]
@@ -39,7 +39,7 @@ namespace minimal_app_test
             var result = Logic.GetMessage(dbConnection);
 
             // Assert
-            Assert.Equal("hello word - ", result);
+            Assert.Equal("almost there, secret: DB_CONNECTION is not set", result);
         }
     }
 }
